@@ -1,0 +1,26 @@
+<p-panel header="Employee Management System">
+  <h3>First Name</h3>
+<span class="ui-float-label">
+  <input id="float-input" type="text" [(ngModel)]="employee.firstname" size="30" pInputText required >
+  <label for="float-input">First Name</label>
+</span>
+<h3>Last Name</h3>
+<span class="ui-float-label">
+  <input id="float-input" type="text" [(ngModel)]="employee.lastname" size="30" pInputText required> 
+  <label for="float-input">Last Name</label>
+</span>
+<h3>Age</h3>
+<span class="ui-float-label">
+  <input id="float-input" type="text" size="30" [(ngModel)]="employee.age" pInputText required> 
+  <label for="float-input">Age</label>
+</span>
+<h3 class="first">Designation</h3>
+<span class="ui-float-label">
+  <input id="float-input" type="text" size="30" [(ngModel)]="employee.designation" pInputText required> 
+  <label for="float-input">Designation</label>
+</span>
+<p-footer>
+  <button pButton type="button" label="Save" icon="pi pi-check" style="margin-right: .25em" (click)="updateEmployee()"></button>
+  <button pButton type="button" label="Cancel" icon="pi pi-times" class="ui-button-secondary" (click)="cancelEmployee()"></button>
+</p-footer>
+</p-panel>

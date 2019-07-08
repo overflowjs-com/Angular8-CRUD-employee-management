@@ -1,0 +1,9 @@
+<p-card [style]="{width: '360px'}" styleClass="ui-card-shadow">
+  <div>{{employee.firstname}} {{employee.lastname}}</div>
+  <div>Age: {{employee.age}} Years</div>
+  <div>{{employee.designation}}</div>
+  <p-footer>
+      <button pButton type="button" label="Edit" icon="pi pi-check" style="margin-right: .25em" (click)="editEmployee()"></button>
+      <button pButton type="button" label="Delete" icon="pi pi-times" class="ui-button-secondary" (click)="deleteEmployee()"></button>
+  </p-footer>
+</p-card>
